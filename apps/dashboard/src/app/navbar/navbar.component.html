@@ -1,0 +1,12 @@
+<div class="flex justify-content-between align-items-center px-8 bg-teal-900 text-white border-bottom-1">
+  <a routerLink="/" class="block text-white no-underline">POC</a>
+  <ul class="remote-menu flex align-items-center list-none gap-5">
+    <li *ngFor="let item of items" routerLinkActive="border-bottom-1 border-orange-300"
+    [routerLinkActiveOptions]="{exact: true}">
+      <a [routerLink]="item.link" class="text-white no-underline">{{ item.label }}</a>
+    </li>
+  </ul>
+  <div class="">
+    <p-avatar label="P" styleClass="bg-white font-bold text-900"></p-avatar>
+  </div>
+</div>
